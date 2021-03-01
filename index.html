@@ -9,59 +9,109 @@
 
 <body>
 
-<!--<form method="POST" action="traitement.php">
+<form method="POST" action="traitement.php">
 
-        <p>
+    <p>
             <label for="pseudo">BryanYanice</label>
             <input type="text" name="pseudo" id="pseudo" maxlength="100" placeholder="recherche"/>
-        </p> 
+    </p> 
 
-    </form>-->
+</form>
 
-    <!--<form method="POST" action="traitement.php">
+<form method="POST" action="traitement.php">
 
-        <p>
+    <p>
             <input type="password" />
             <textarea rows="5" cols="100">text</textarea>
             <input type="number" min="10" max="30" step="10"
-     
+    </P> 
  
-     </form>-->
-   <!-- <form method="POST" action="traitement".php>
-        <p>
-            Veuillez indiquer la tranche d'âge dans laquelle vous vous situez :<br />
+</form>
+
+
+<form method="POST" action="traitement".php>
+    <p>
+          Veuillez indiquer la tranche d'âge dans laquelle vous vous situez :<br />
             <input type="radio" name="age" value="moins15" id="moins15" /> <label for="moins15">Moins de 15 ans</label><br />
             <input type="radio" name="age" value="medium15-25" id="medium15-25" /> <label for="medium15-25">15-25 ans</label><br />
             <input type="radio" name="age" value="medium25-40" id="medium25-40" /> <label for="medium25-40">25-40 ans</label><br />
             <input type="radio" name="age" value="plus40" id="plus40" /> <label for="plus40">Encore plus vieux que ça ?!</label>
-        </p>   
-        <p>
-            Sur quel continent habitez-vous ?<br />
+    </p>   
+    <p>
+          Sur quel continent habitez-vous ?<br />
             <input type="radio" name="continent" value="europe" id="europe" /> <label for="europe">Europe</label><br />
             <input type="radio" name="continent" value="afrique" id="afrique" /> <label for="afrique">Afrique</label><br />
             <input type="radio" name="continent" value="asie" id="asie" /> <label for="asie">Asie</label><br />
             <input type="radio" name="continent" value="amerique" id="amerique" /> <label for="amerique">Amérique</label><br />
             <input type="radio" name="continent" value="australie" id="australie" /> <label for="australie">Australie</label>
-        </p>
-    </form> -->
+    </p>
+</form> 
 
-    <form method="post" action="traitement.php"
+
+<form method="post" action="traitement.php">
     <p>
-        <label for="pays">Dans quel pays habitez-vous ?</label><br />
-        <select name="pays" id="pays">
+       <label for="pays">Dans quel pays habitez-vous ?</label><br />
+       <select name="pays" id="pays">
+         <optgroup label="Europe">
             <option value="france">France</option>
             <option value="espagne">Espagne</option>                    
-            <option value="algerie">Algerie</option>
             <option value="italie">Italie</option>
+         </optgroup>
+         <optgroup label="Amerique">   
+            <option value="usa">Usa</option>
             <option value="canada" selected>Canada</option>       
+         </optgroup>   
+         <optgroup label="Asie">  
             <option value="japon">Japon</option>                     
             <option value="malaisie">Malaisie</option>            
-            <option value="indonesie">Indonesie</option>                
-        </select>
+            <option value="indonesie">Indonesie</option>
+        </optgroup>        
+       </select>
     </p>
+</form>
+ 
 
-      
+<form method="POST" action="traitement.php">
+    <fieldset>
+        <legend>Vos coordonnées</legend> <!--Titre du fieldes-->
 
+            <label for="nom">Quel est votre nom ?</label>
+            <input type="text" name="nom" id="nom" required /><br />
+
+            <label for="prenom">Quel est votre prénom ?</label>
+            <input type="text" name="prenom" id="prenom" required /><br />
+
+            <label for="email">Quel est votre e-mail ?</label>
+            <input type="email" name="email" id="email" required />
+    </fieldset>
+
+    <fieldset>
+        <legend>vos objectif</legend> <!--Titre du fieldset-->
+        <p>
+            <input type="radio" name="objectif" value="réussir la formation" id="réussir la formation" required /> 
+            <label for="réussir la formation">Réussir la formation</label><br />
+
+            <input type="radio" name="objectif" value="trouvez du travail" id="trouvez du travail" required /> 
+            <label for="trouvez du travail">Trouvez du travail</label><br />
+
+            <input type="radio" name="objectif" value="travailler en freelance" id="travailler en freelance" required /> 
+            <label for="travailler en freelance">Travailler en freelance</label><br /><br />
+        </p>
+        
+        <p>
+            <label for="precisions">Si "Autre" veuillez préciser :</label>
+            <textarea name="precisions" id="precisions" cols="40" rows="4"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="Envoyer" />
+        </p>
+    </fieldset>
+
+</form>
+  
+    <audio src="clubbed to death.mp3" controls autoplay></audio>
+       
 </body>
 
 </html>
